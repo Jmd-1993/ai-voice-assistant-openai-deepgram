@@ -5,8 +5,7 @@ const { OpenAI } = require('openai');
 const twilio = require('twilio');
 
 const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY
-});
+      apiKey: "sk-proj-bsrJObWU9AwOhXwWU0yneN9vG9TJ0cvLyRp__DJ8ZraeHwvQMvhhsj_BDaPnpuIurD3tDA"});
 
 router.post('/incoming', async (req, res) => {
   const twiml = new twilio.twiml.VoiceResponse();
